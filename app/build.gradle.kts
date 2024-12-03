@@ -9,7 +9,7 @@ android {
     defaultConfig {
         applicationId = "com.uth.reconocimiento_de_rostro"
         minSdk = 28
-        targetSdk = 34
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
@@ -47,6 +47,4 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation (libs.face.recognition)
-
-
 }

@@ -48,7 +48,7 @@ public class ReconocimientoRostrosFragment extends Fragment {
 
         txtResult = binding.textResult;
         imgVistaPrevia = binding.imgPreviewRostros;
-        btnAnalizar = binding.btnAnalizar;
+        btnAnalizar = binding.btnEjecutar;
         btnAnalizar.setVisibility(View.GONE);
 
         Bitmap fotoCamara = (Bitmap)getArguments().getParcelable("camara");

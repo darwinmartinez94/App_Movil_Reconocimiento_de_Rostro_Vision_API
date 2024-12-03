@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
     private String directorioImagen;
     private Bitmap imagenSeleccionada;
     private NavController navController;
-
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
 
