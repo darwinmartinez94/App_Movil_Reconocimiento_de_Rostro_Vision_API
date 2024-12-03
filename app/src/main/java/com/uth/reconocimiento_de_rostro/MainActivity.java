@@ -52,11 +52,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         directorioImagen = "";
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         setSupportActionBar(binding.appBarMain.toolbar);
         binding.appBarMain.btnAbrirCamara.setOnClickListener(view -> {
             if(checkAndRequestPermissions()){
@@ -72,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                         Log.d("IMAGEN_CAMARA","Error al generar archivo de imagen");
                     }
                     if(archivoImagen != null){
-                        Uri fotoUri = FileProvider.getUriForFile(getBaseContext(), "hn.uth.uthvisionapi.fileprovider", archivoImagen);
+                        Uri fotoUri = FileProvider.getUriForFile(getBaseContext(), "com.uth.reconocimiento_de_rostro.fileprovider", archivoImagen);
                         takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, fotoUri);
                     }
 
@@ -91,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
                 R.id.nav_reconocimiento_rostro, R.id.nav_etiquetado_imagenes, R.id.nav_reconocimiento_objetos)
                 .setOpenableLayout(drawer)
                 .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+        navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
     }

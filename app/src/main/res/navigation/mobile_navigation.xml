@@ -9,7 +9,13 @@
         android:id="@+id/nav_reconocimiento_rostro"
         android:name="com.uth.reconocimiento_de_rostro.ui.reconocimiento_rostros.ReconocimientoRostrosFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_reconocimiento_rostros" />
+        tools:layout="@layout/fragment_reconocimiento_rostros" >
+        <argument
+            android:name="imagen"
+            app:argType="android.graphics.Bitmap"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_etiquetado_imagenes"
@@ -21,5 +27,11 @@
         android:id="@+id/nav_reconocimiento_objetos"
         android:name="com.uth.reconocimiento_de_rostro.ui.reconocimiento_objetos.ReconocimientoObjetosFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_reconocimiento_objetos" />
+        tools:layout="@layout/fragment_reconocimiento_objetos" >
+        <argument
+            android:name="imagen"
+            app:argType="android.graphics.Bitmap"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
 </navigation>

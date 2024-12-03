@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "com.uth.reconocimiento_de_rostro"
-        minSdk = 31
+        minSdk = 28
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -46,7 +46,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    // Use this dependency to use the dynamically downloaded model in Google Play Services
-    implementation ("com.google.android.gms:play-services-mlkit-face-detection:17.1.0")
+    implementation (libs.face.recognition)
+
 
 }

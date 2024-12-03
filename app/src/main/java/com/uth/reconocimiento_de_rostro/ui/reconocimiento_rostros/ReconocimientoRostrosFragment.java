@@ -67,7 +67,6 @@ public class ReconocimientoRostrosFragment extends Fragment {
         btnAnalizar.setOnClickListener(event -> {
             ejecutarAnalisisRostro();
         });
-        //reconocimientoRostrosViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
