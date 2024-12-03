@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_reconocimiento_rostro">
+
+    <fragment
+        android:id="@+id/nav_reconocimiento_rostro"
+        android:name="com.uth.reconocimiento_de_rostro.ui.reconocimiento_rostros.ReconocimientoRostrosFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_reconocimiento_rostros" />
+
+    <fragment
+        android:id="@+id/nav_etiquetado_imagenes"
+        android:name="com.uth.reconocimiento_de_rostro.ui.etiquetado_imagenes.EtiquetadoImagenesFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_etiquetado_imagenes" />
+
+    <fragment
+        android:id="@+id/nav_reconocimiento_objetos"
+        android:name="com.uth.reconocimiento_de_rostro.ui.reconocimiento_objetos.ReconocimientoObjetosFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_reconocimiento_objetos" />
+</navigation>
