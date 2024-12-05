@@ -32,7 +32,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="texto de la imagen esto es una prueba del resuktadi de analisais del rostro" />
+        tools:text="texto de la imagen esto es una prueba del resultado de analisis del rostro con Azure Face API" />
 
     <Button
         android:id="@+id/btnEjecutar"
